@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() 
+{
+  int  a,b,c;
+  char op ;
+  printf(" enter any one opreater from +,-,*,/ \n");
+  scanf ("%c", &op);
+  printf("enter two natural number \n");
+  scanf( "%d%d" ,&a,&b);
+
+switch (op)
+{
+   { 
+    case'+':
+    c=a+b;
+    printf("addition=%d",c);
+    break;
+   }
+   {
+    case'-':
+    c=a-b;
+    printf("minus=%d",c);
+    break;
+   }
+   {
+    case'*':
+    c=a*b;
+    printf("product=%d",c);
+    break;
+   }
+   {
+    case'/':
+    c=a/b;
+    printf("division=%d",c);
+    break;
+   }
+    default:
+    printf("invalid opreater");
+}
+return 0;
+}
